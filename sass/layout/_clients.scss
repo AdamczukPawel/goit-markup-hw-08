@@ -1,0 +1,29 @@
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 94px 15px;
+}
+
+.clients__client {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  border-color: $clientsLogoColor;
+  fill: $clientsLogoColor;
+  &:hover {
+    fill: $clientsLogoHoverColor;
+    border-color: $clientsLogoHoverColor;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.clients__logo {
+  display: flex;
+  align-content: center;
+  width: 106px;
+}

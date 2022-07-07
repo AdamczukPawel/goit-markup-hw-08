@@ -1,0 +1,18 @@
+.contact {
+  display: block;
+}
+.contact__link {
+  color: $secondaryColor;
+  fill: $secondaryColor;
+  text-decoration: none;
+  margin: auto 25px;
+  &:hover,
+  &:focus {
+    color: $headerHoverColor;
+    fill: $headerHoverColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.contact__icon {
+  margin: auto 10px;
+}

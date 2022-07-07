@@ -1,0 +1,25 @@
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 94px auto;
+}
+.feature {
+  color: $secondaryColor;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.feature__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $advantagesIconBackgroundColor;
+}
+.feature__title {
+  font-weight: 700;
+  color: $primaryColor;
+  margin-bottom: 10px;
+}

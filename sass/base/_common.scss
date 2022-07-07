@@ -1,0 +1,29 @@
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: #212121;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+header,
+section,
+footer {
+    font-family: "Roboto", " Raleway", sans-serif;
+}
