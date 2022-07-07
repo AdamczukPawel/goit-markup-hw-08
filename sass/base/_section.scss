@@ -1,19 +1,37 @@
 .section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   &--main-title {
     font-family: Roboto;
     color: $darkBackgroundFontColor;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
-    width: 696px;
+    width: 365px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 118px;
     padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .section__title {
+  }
+}
+@media screen and (min-width: $desktop) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.36;
+    text-align: center;
+    &--main-title {
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      width: 696px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 200px;
+      padding-bottom: 30px;
+    }
   }
 }

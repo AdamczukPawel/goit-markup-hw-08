@@ -6,20 +6,29 @@
     url(../images/background1.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  height: 600px;
-  max-width: 1600px;
+  background-size: cover;
+  height: 400px;
+  max-width: $mobile;
   margin: 0 auto;
   display: block;
   justify-content: center;
+}
+@media screen and (min-width: $desktop) {
+  .hero {
+    height: 600px;
+    max-width: $desktop;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    background-size: unset;
+  }
 }
 .hero__button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.hero__button {
   border-radius: 4px;
-  padding: 10px auto;
+  padding: 0px auto;
   align-items: center;
   font-family: Roboto;
   color: $darkBackgroundFontColor;

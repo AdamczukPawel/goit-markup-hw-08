@@ -18,13 +18,13 @@
 }
 .navigation__link--active {
   position: relative;
-}
-.navigation__link--active::after {
-  content: "";
-  display: block;
-  border-top: 4px solid $headerUnderlineColor;
-  border-radius: 2px;
-  position: absolute;
-  width: 100%;
-  bottom: -32.5px;
+  &::after {
+    content: "";
+    display: block;
+    border-top: 4px solid $headerUnderlineColor;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: -32.5px;
+  }
 }
