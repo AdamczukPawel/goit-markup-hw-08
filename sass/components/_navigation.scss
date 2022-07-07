@@ -18,6 +18,7 @@
 }
 .navigation__link--active {
   position: relative;
+  color: $headerHoverColor;
   &::after {
     content: "";
     display: block;

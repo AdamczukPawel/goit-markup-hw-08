@@ -2,10 +2,18 @@
   background-color: $backgroundTeamColor;
 }
 .team__container {
-  margin-top: 94px;
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: $desktop) {
+  .team__container {
+    margin-top: 94px;
+    padding: 94px 0;
+  }
+  .team__title {
+    margin-bottom: 50px;
+  }
 }
