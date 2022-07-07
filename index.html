@@ -57,6 +57,11 @@
             +48 111 111 111
           </a>
         </div>
+        <button class="header__menu-button" type="button" data-modal-menu-open>
+          <svg width="40px" height="40px" class="header__menu-icon">
+            <use href="./images/icons.svg#icon-modal-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- HEADER END -->
@@ -66,7 +71,7 @@
         <h1 class="section__title--main-title">
           EFEKTYWNE ROZWIĄZANIA DLA BIZNESU
         </h1>
-        <button class="hero__button" type="button" data-modal-open>
+        <button class="hero__button" type="button" data-modal-menu-open>
           Zamów usługę
         </button>
       </div>
@@ -472,7 +477,7 @@
         </div>
         <div class="newsletter">
           <h5 class="smaller-title">ZAPISZ SIĘ DO NEWSLETTERA</h5>
-          <form>
+          <form class="newsletter__form">
             <input
               type="email"
               placeholder="E-mail"
@@ -582,7 +587,21 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
     <!-- MODAL END -->
+    <!-- MODAL MENU START -->
+    <div class="backdrop backdrop--hidden" data-modal-menu>
+      <div class="modal-menu">
+        <button
+          type="button"
+          class="modal-menu__close-button menu-close-button"
+          data-modal-menu-close
+        >
+          X
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
+    <!-- MODAL MENU END -->
   </body>
 </html>

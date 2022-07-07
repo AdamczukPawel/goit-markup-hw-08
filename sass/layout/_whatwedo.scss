@@ -2,6 +2,9 @@
   display: none;
 }
 @media screen and (min-width: $desktop) {
+  .what-we-do {
+    display: flex;
+  }
   .what-we-do__list {
     display: flex;
     align-content: space-between;
