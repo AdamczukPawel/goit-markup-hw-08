@@ -596,8 +596,43 @@
           class="modal-menu__close-button menu-close-button"
           data-modal-menu-close
         >
-          X
+          <svg width="40px" height="40px" class="modal-menu__icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
         </button>
+        <nav class="navigation--modal">
+          <ul class="modal-menu-navigation">
+            <li class="modal-menu-navigation__item">
+              <a
+                class="modal-menu-navigation__link modal-menu-navigation__link--active"
+                href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="modal-menu-navigation__item">
+              <a class="modal-menu-navigation__link" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="modal-menu-navigation__item">
+              <a class="modal-menu-navigation__link" href="">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="modal-menu-contact modal-menu__modal-menu-contact">
+          <a href="tel:+48111111111" class="contact__link"> +48 111 111 111 </a>
+          <a href="mailto:info@devstudio.com" class="modal-menu-contact__link">
+            info@devstudio.com
+          </a>
+        </div>
+        <div
+          class="modal-menu-social-links modal-menu__modal-menu-social-links"
+        >
+          <a href="" class="modal-menu-social-links__link"> Instagram </a>
+          <a href="" class="modal-menu-social-links__link"> Twitter </a>
+          <a href="" class="modal-menu-social-links__link"> Facebook </a>
+          <a href="" class="modal-menu-social-links__link"> LinkedIn </a>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
