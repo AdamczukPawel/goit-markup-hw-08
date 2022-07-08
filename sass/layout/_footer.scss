@@ -70,14 +70,23 @@
 @media screen and (min-width: $desktop) {
   .footer__logo {
     margin-bottom: 20px;
+    margin-top: 0;
   }
   .footer__container {
     padding: 60px 0;
     display: flex;
+    flex-direction: row;
+    align-items: unset;
+  }
+  .footer__informations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .footer__contact {
     color: rgba(255, 255, 255, 0.6);
+    align-items: flex-start;
   }
 
   .footer__link {
@@ -85,7 +94,7 @@
     text-decoration: none;
     display: block;
     font-style: normal;
-    margin: 9px auto;
+    margin: 9px 0px 0px 0px;
     &:hover,
     &:focus {
       color: $footerHoverColor;
@@ -96,7 +105,7 @@
     font-style: normal;
   }
   .footer__social {
-    margin-left: 70px;
+    margin: 12px 78px 100px 70px;
   }
 
   .footer__social-links {

@@ -41,3 +41,15 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: $desktop) {
+  .newsletter {
+    margin-top: 12px;
+  }
+  .newsletter__form {
+    display: flex;
+    flex-direction: row;
+  }
+  .newsletter__input {
+    margin-right: 12px;
+  }
+}
