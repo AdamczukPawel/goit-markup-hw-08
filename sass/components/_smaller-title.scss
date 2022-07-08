@@ -6,6 +6,11 @@
   margin-top: 0;
   margin-bottom: 20px;
 }
+@media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+  .smaller-title {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: $desktop) {
   .smaller-title {
     justify-content: flex-start;

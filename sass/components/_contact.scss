@@ -1,11 +1,7 @@
-.contact {
-  display: block;
-}
 .contact__link {
   color: $secondaryColor;
   fill: $secondaryColor;
   text-decoration: none;
-  margin: auto 25px;
   &:hover,
   &:focus {
     color: $headerHoverColor;
@@ -13,7 +9,24 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.contact__icon {
-  margin: auto 10px;
+@media screen and (min-width: $tablet) and (max-width: "calc($tablet-1)") {
 }
-
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact__icon {
+  margin-right: 10px;
+}
+@media screen and (min-width: $desktop) {
+  .contact {
+    display: block;
+    flex-direction: unset;
+  }
+  .contact__link {
+    margin: auto 25px;
+  }
+  .contact__icon {
+    margin-right: 10px;
+  }
+}

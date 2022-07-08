@@ -35,11 +35,20 @@
 .newsletter__button-icon {
   fill: $darkBackgroundFontColor;
   margin-left: 24px;
+  align-items: center;
 }
 .newsletter__button-inside {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+  .newsletter {
+    margin-top: 60px;
+  }
+  .newsletter__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: $desktop) {
   .newsletter {

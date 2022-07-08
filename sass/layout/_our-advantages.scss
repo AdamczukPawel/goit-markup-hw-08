@@ -7,19 +7,6 @@
 .feature {
   color: $secondaryColor;
 }
-@media screen and (min-width: $desktop) {
-  .advantages__list {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 94px auto;
-  }
-  .feature {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-}
 .feature__icon {
   display: flex;
   justify-content: center;
@@ -33,4 +20,24 @@
   font-weight: 700;
   color: $primaryColor;
   margin-bottom: 10px;
+}
+@media screen and (min-width: $tablet) {
+  .advantages__list {
+    justify-content: space-between;
+    margin: 94px auto;
+  }
+  .feature {
+    width: 354px;
+    height: 251px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .advantages__list {
+    flex-wrap: nowrap;
+  }
+  .feature {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }

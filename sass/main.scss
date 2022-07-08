@@ -1,5 +1,6 @@
 @import "./utils/visually-hidden";
 @import "./utils/vars";
+@import "./utils/mixins";
 
 @import "./base/common";
 @import "./base/container";
@@ -21,7 +22,6 @@
 @import "./components/modal-menu-navigation";
 @import "./components/modal-menu-contact";
 @import "./components/modal-menu-social-links";
-
 
 @import "./layout/header";
 @import "./layout/hero";

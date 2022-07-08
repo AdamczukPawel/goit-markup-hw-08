@@ -2,7 +2,8 @@
   background-color: $backgroundTeamColor;
 }
 .team__container {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team__title {
@@ -10,7 +11,6 @@
 }
 @media screen and (min-width: $desktop) {
   .team__container {
-    margin-top: 94px;
     padding: 94px 0;
   }
   .team__title {

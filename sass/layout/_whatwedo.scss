@@ -5,19 +5,19 @@
   .what-we-do {
     display: flex;
   }
+  .what-we-do__container {
+    padding-bottom: 94px;
+  }
   .what-we-do__list {
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
   }
   .what-we-do__element {
     position: relative;
-    padding-right: 15px;
-    padding-left: 15px;
   }
   .what-we-do__label {
     position: absolute;
     bottom: 0;
-    left: 15px;
     color: $darkBackgroundFontColor;
     font-size: 14px;
     font-weight: 700;
