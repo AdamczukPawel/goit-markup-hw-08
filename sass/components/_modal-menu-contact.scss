@@ -1,0 +1,25 @@
+.modal-menu-contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+.modal-menu-contact__tel {
+  color: $hoverColor;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  margin-bottom: 32px;
+}
+.modal-menu-contact__mail {
+  color: $secondaryColor;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  &:hover,
+  &:focus {
+    color: $headerHoverColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
