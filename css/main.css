@@ -58,11 +58,9 @@ footer {
   font-family: Roboto;
   color: #ffffff;
   letter-spacing: 0.06em;
-  width: 365px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 30px;
+  padding: 118px 57.5px 30px 57.5px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -136,10 +134,19 @@ footer {
   color: #2196f3;
 }
 
+.newsletter {
+  width: 100%;
+  max-width: 738px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .newsletter__form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .newsletter__input {
@@ -147,11 +154,11 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
   height: 50px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   margin: 10px auto;
+  width: 100%;
 }
 
 .newsletter__input::-moz-placeholder {
@@ -206,6 +213,9 @@ footer {
 @media screen and (min-width: 1200px) {
   .newsletter {
     margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .newsletter__form {
@@ -490,10 +500,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .johns {
-    justify-content: space-between;
-  }
-
   .johns__member {
     width: 354px;
     margin-bottom: unset;
@@ -503,6 +509,9 @@ footer {
   }
   .johns__member:nth-child(n+3) {
     margin-top: 30px;
+  }
+  .johns__member:nth-child(2n+2) {
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1086,7 +1095,7 @@ footer {
 }
 
 .footer__container {
-  padding: 60px 0;
+  padding: 60px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1216,6 +1225,7 @@ footer {
 
   .footer__address {
     font-style: normal;
+    width: 246px;
   }
 
   .footer__social {
@@ -1274,13 +1284,15 @@ footer {
 
 @media screen and (min-width: 768px) {
   .advantages__list {
-    justify-content: space-between;
     margin: 94px auto;
   }
 
   .feature {
     width: 354px;
     height: 251px;
+  }
+  .feature:nth-child(2n+2) {
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1334,13 +1346,22 @@ footer {
     padding-bottom: 60px;
   }
 
+  .clients__list {
+    justify-content: center;
+  }
+
   .clients__client {
     width: 226px;
     margin-bottom: 0px;
   }
-
-  .clients__client:nth-child(n+4) {
-    margin-top: 30px;
+  .clients__client:nth-last-child(n+4) {
+    margin-bottom: 30px;
+  }
+  .clients__client:nth-child(n) {
+    margin-right: 30px;
+  }
+  .clients__client:nth-child(3n) {
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {

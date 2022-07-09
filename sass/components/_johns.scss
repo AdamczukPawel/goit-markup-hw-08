@@ -42,9 +42,6 @@
   font-weight: 500;
 }
 @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
-  .johns {
-    justify-content: space-between;
-  }
   .johns__member {
     width: 354px;
     margin-bottom: unset;
@@ -53,6 +50,9 @@
     }
     &:nth-child(n + 3) {
       margin-top: 30px;
+    }
+    &:nth-child(2n + 2) {
+      margin-left: 30px;
     }
   }
 }

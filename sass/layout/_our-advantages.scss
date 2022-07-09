@@ -23,12 +23,14 @@
 }
 @media screen and (min-width: $tablet) {
   .advantages__list {
-    justify-content: space-between;
     margin: 94px auto;
   }
   .feature {
     width: 354px;
     height: 251px;
+    &:nth-child(2n + 2) {
+      margin-left: 30px;
+    }
   }
 }
 @media screen and (min-width: $desktop) {

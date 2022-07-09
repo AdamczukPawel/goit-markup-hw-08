@@ -11,7 +11,7 @@
 }
 
 .footer__container {
-  padding: 60px 0;
+  padding: 60px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,6 +133,7 @@
   }
   .footer__address {
     font-style: normal;
+    width: 246px;
   }
   .footer__social {
     margin: 12px 78px 100px 70px;
