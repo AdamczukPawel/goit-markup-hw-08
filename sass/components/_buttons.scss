@@ -21,6 +21,54 @@
 }
 .buttons__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
+}
+.buttons__button1 {
+  width: 103px;
+}
+.buttons__button2 {
+  width: 128px;
+}
+.buttons__button3 {
+  width: 145px;
+}
+.buttons__button4 {
+  width: 103px;
+}
+.buttons__button5 {
+  width: 130px;
+}
+@media screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
+  .buttons__page:nth-last-child(n + 3) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+  .buttons__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .buttons__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .buttons__button1 {
+    width: 121px;
+  }
+  .buttons__button2 {
+    width: 93px;
+  }
+  .buttons__button3 {
+    width: 114px;
+  }
+  .buttons__button4 {
+    width: 91px;
+  }
+  .buttons__button5 {
+    width: 121px;
+  }
 }
