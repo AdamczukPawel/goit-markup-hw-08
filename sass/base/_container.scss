@@ -6,13 +6,3 @@
   padding-right: 15px;
   width: 100%;
 }
-@media screen and (max-width: calc($mobile - 1px)) {
-  .container {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-@media screen and (min-width: $desktop) {
-  .container {
-  }
-}

@@ -30,14 +30,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px unset;
+  gap: 30px 0px;
 }
 .projects__project {
   color: $secondaryColor;
   font-size: 16px;
   line-height: 1.88;
   border: 1px solid #eeeeee;
-  height: 404px;
+  max-height: 404px;
   max-width: 100%;
 }
 
@@ -97,6 +97,5 @@
   }
   .projects__list {
     justify-content: space-between;
-    gap: 30px 0;
   }
 }
