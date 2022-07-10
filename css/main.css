@@ -48,6 +48,12 @@ footer {
   width: 100%;
 }
 
+@media screen and (max-width: 479px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 .section__title {
   font-weight: 900;
   font-size: 26px;
@@ -590,7 +596,7 @@ footer {
 }
 
 .project__data {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .project__title {
@@ -600,24 +606,19 @@ footer {
   line-height: 2;
   max-width: 322px;
   min-height: 36px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   margin: 0px 0px 4px 0px;
 }
 
 .project__description {
-  width: 322px;
-  height: 30px;
+  max-width: 322px;
+  mini-height: 30px;
 }
 
 .projects__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px 0px;
+  justify-content: center;
+  gap: 30px unset;
 }
 
 .projects__project {
@@ -626,6 +627,7 @@ footer {
   line-height: 1.88;
   border: 1px solid #eeeeee;
   height: 404px;
+  max-width: 100%;
 }
 
 .project__image {
@@ -688,6 +690,11 @@ footer {
 @media screen and (min-width: 1200px) {
   .project__overlay {
     width: 370px;
+  }
+
+  .projects__list {
+    justify-content: space-between;
+    gap: 30px 0;
   }
 }
 .buttons__button {
