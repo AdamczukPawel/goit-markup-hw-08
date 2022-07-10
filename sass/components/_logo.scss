@@ -1,14 +1,15 @@
 .logo {
-    font-family: "Raleway";
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 26px;
-    color: $darkLogoColor;
-    margin-right: 93px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    &__color1 {
+  font-family: "Raleway";
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+  color: $darkLogoColor;
+  margin-right: 93px;
+  display: flex;
+  text-decoration: none;
+  margin: auto 0px;
+  align-self: center;
+  &__color1 {
     color: $firstLogoColor;
-    }
+  }
 }

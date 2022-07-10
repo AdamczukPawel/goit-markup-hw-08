@@ -1,7 +1,11 @@
+.clients {
+  padding-bottom: 60px;
+}
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 .clients__client {
   display: flex;
@@ -26,11 +30,6 @@
   align-content: center;
   width: 106px;
 }
-@media screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
-  .clients__client:nth-last-child(n + 3) {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
   .clients {
     padding-top: 60px;
@@ -42,20 +41,11 @@
   .clients__client {
     width: 226px;
     margin-bottom: 0px;
-    &:nth-last-child(n + 4) {
-      margin-bottom: 30px;
-    }
-    &:nth-child(n) {
-      margin-right: 30px;
-    }
-    &:nth-child(3n) {
-      margin-right: 0px;
-    }
   }
 }
 @media screen and (min-width: $desktop) {
   .clients__list {
-    margin: 0 15px 94px 15px;
+    justify-content: space-between;
   }
 
   .clients__client {
